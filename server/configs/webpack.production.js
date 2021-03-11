@@ -23,6 +23,9 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
     modules: ["node_modules"],
+    fallback: {
+      path: require.resolve("path-browserify"),
+    },
   },
   module: {
     rules: [
@@ -82,15 +85,17 @@ module.exports = {
   stats: "errors-only",
   optimization: {
     minimize: true,
-    noEmitOnErrors: true,
     splitChunks: {
       cacheGroups: {
-        vendors: {
+        defaultVendors: {
           test: /[\\/]node_modules[\\/]/,
           name: "vendors",
           chunks: "all",
         },
       },
     },
+  },
+  watchOptions: {
+    aggregateTimeout: 0,
   },
 };

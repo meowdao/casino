@@ -2,7 +2,6 @@ import React, {PropsWithChildren, ReactElement, useEffect, useState} from "react
 
 import {IUser, UserContext} from "./context";
 
-
 const STORAGE_NAME = "casino_user";
 
 interface IUserProviderProps<T> {
@@ -14,13 +13,13 @@ export const UserProvider = <T extends IUser>(props: PropsWithChildren<IUserProv
   const [profile, setProfile] = useState<T | null>(defaultProfile);
 
   useEffect(() => {
-    const auth = localStorage.getItem(STORAGE_NAME);
+    const auth = window.localStorage.getItem(STORAGE_NAME);
     setProfile(auth ? JSON.parse(auth) : defaultProfile);
   }, []);
 
   const save = (key: string, profile: T | null): void => {
     const json = JSON.stringify(profile);
-    localStorage.setItem(key, json);
+    window.localStorage.setItem(key, json);
   };
 
   const logIn = (profile: T): void => {

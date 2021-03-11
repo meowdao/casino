@@ -3,7 +3,6 @@ import {Configuration, HotModuleReplacementPlugin} from "webpack";
 import DotEnvPlugin from "dotenv-webpack";
 import CopyPlugin from "copy-webpack-plugin";
 
-
 const config: Configuration = {
   mode: "development",
   devtool: "cheap-module-source-map",
@@ -22,6 +21,9 @@ const config: Configuration = {
     modules: ["node_modules"],
     alias: {
       "react-dom": "@hot-loader/react-dom",
+    },
+    fallback: {
+      path: require.resolve("path-browserify"),
     },
   },
   module: {
@@ -79,16 +81,18 @@ const config: Configuration = {
     hints: false,
   },
   optimization: {
-    noEmitOnErrors: true,
     splitChunks: {
       cacheGroups: {
-        vendors: {
+        defaultVendors: {
           test: /[\\/]node_modules[\\/]/,
           name: "vendors",
           chunks: "all",
         },
       },
     },
+  },
+  watchOptions: {
+    aggregateTimeout: 0,
   },
 };
 

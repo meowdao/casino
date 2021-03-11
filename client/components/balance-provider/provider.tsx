@@ -2,7 +2,6 @@ import React, {useEffect, useState, PropsWithChildren, ReactElement} from "react
 
 import {BalanceContext} from "./context";
 
-
 const STORAGE_NAME = "casino_balance";
 
 interface IBalanceProviderProps {
@@ -14,13 +13,13 @@ export const BalanceProvider = (props: PropsWithChildren<IBalanceProviderProps>)
   const [balance, setBalance] = useState<number>(defaultBalance);
 
   useEffect(() => {
-    const auth = localStorage.getItem(STORAGE_NAME);
+    const auth = window.localStorage.getItem(STORAGE_NAME);
     setBalance(auth ? JSON.parse(auth) : defaultBalance);
   }, []);
 
   const save = (key: string, balance: number): void => {
     const json = JSON.stringify(balance);
-    localStorage.setItem(key, json);
+    window.localStorage.setItem(key, json);
   };
 
   const update = (amount: number): void => {
