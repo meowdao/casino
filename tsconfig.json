@@ -15,7 +15,7 @@
     "noUnusedParameters": false,
     "outDir": "./dist",
     "resolveJsonModule": true,
-    "rootDirs": ["./server", "./client"],
+    "rootDirs": ["./src", "./server", "./client"],
     "skipLibCheck": true,
     "sourceMap": true,
     "strictBindCallApply": true,
@@ -23,7 +23,7 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": false,
     "target": "es2017",
-    "lib": ["dom", "es2020.Promise"]
+    "lib": ["ES2020.Promise"]
   },
   "exclude": ["node_modules", "./dist"]
 }
