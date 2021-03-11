@@ -23,7 +23,7 @@
     "react-dom": "17.0.1",
     "react-hot-loader": "4.13.0",
     "path-browserify": "1.0.1",
-    "webpack": "5.24.3",
+    "webpack": "5.24.4",
     "webpack-dev-middleware": "4.1.0",
     "webpack-hot-middleware": "git+https://github.com/lukeapage/webpack-hot-middleware#2cdfe0d0111dab6432b8683112fd2d17a5e80572"
   },
