@@ -1,10 +1,9 @@
 import React, {FC, useContext, useState} from "react";
-import {Button, Dialog, DialogActions, DialogContent, Grid} from "@material-ui/core";
+import {Button, Dialog, DialogActions, DialogContent, Grid, DialogProps} from "@material-ui/core";
 
 import {BalanceContext} from "../../../components/balance-provider";
 import {Panel} from "./panel";
 import useStyles from "./styles";
-
 
 export enum OPTIONS {
   SPADES = "♠",
@@ -15,14 +14,14 @@ export enum OPTIONS {
 
 const PLACEHOLDER = "?";
 
-export interface IGameDialogProps {
+export interface IGameDialogProps extends DialogProps {
   open: boolean;
   onClose: () => void;
   onResults: (results: Array<string>) => void;
 }
 
 export const GameDialog: FC<IGameDialogProps> = props => {
-  const {open, onClose, onResults} = props;
+  const {onClose, onResults, ...rest} = props;
 
   const classes = useStyles();
 
@@ -84,7 +83,7 @@ export const GameDialog: FC<IGameDialogProps> = props => {
   };
 
   return (
-    <Dialog onClose={handleClose} open={open}>
+    <Dialog onClose={handleClose} {...rest}>
       <DialogContent>
         <Grid container spacing={2}>
           {results.map((result, i) => (

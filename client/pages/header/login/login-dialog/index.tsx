@@ -3,7 +3,6 @@ import {Button, Dialog, DialogActions, DialogContent, TextField} from "@material
 
 import {IUser} from "../../../../components/user-provider";
 
-
 export interface ILoginDialogProps {
   open: boolean;
   onClose: () => void;

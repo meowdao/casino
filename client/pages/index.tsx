@@ -9,7 +9,6 @@ import {Footer} from "./footer";
 import {IResultsSelectorRef, Results} from "./content";
 import useStyles from "./styles";
 
-
 const App: FC = () => {
   const classes = useStyles();
   const ref = useRef<IResultsSelectorRef>(null);

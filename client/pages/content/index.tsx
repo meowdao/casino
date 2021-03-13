@@ -10,7 +10,6 @@ import {
   TableRow,
 } from "@material-ui/core";
 
-
 export interface IResultsSelectorProps {}
 
 export interface IResultsSelectorRef {

@@ -1,10 +1,10 @@
-import webpack from "webpack";
+import {webpack} from "webpack";
 import {Router} from "express";
 import webpackDevMiddleware from "webpack-dev-middleware";
 import webpackHotMiddleware from "webpack-hot-middleware";
+
 import configDev from "./webpack.development";
 import configHot from "./webpack.hot";
-
 
 const router = Router();
 

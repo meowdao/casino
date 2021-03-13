@@ -5,7 +5,6 @@ const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 const DotEnvPlugin = require("dotenv-webpack");
 const CopyPlugin = require("copy-webpack-plugin");
 
-
 module.exports = {
   mode: "production",
   devtool: "source-map",

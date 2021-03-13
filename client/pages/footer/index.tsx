@@ -5,7 +5,6 @@ import {Casino} from "@material-ui/icons";
 import {GameDialog} from "./game-dialog";
 import useStyles from "./styles";
 
-
 export interface IFooterProps {
   onResults: (results: Array<string>) => void;
 }

@@ -2,7 +2,6 @@ import React, {ComponentClass, FunctionComponent} from "react";
 import {render} from "react-dom";
 import {createMuiTheme, CssBaseline, MuiThemeProvider} from "@material-ui/core";
 
-
 const theme = createMuiTheme();
 
 export default (App: ComponentClass<any> | FunctionComponent<any>): void => {

@@ -5,7 +5,6 @@ import app from "./configs/express";
 import assets from "./routes/common/assets";
 import fe from "./routes/common/fe";
 
-
 app.use(assets);
 app.use(fe);
 

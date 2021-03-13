@@ -6,7 +6,6 @@ import {IUser, UserContext} from "../../../components/user-provider";
 import {LoginDialog} from "./login-dialog";
 import useStyles from "./styles";
 
-
 export const Login: FC = () => {
   const classes = useStyles();
   const [anchor, setAnchor] = useState<Element | null>(null);

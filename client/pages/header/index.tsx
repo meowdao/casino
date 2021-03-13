@@ -5,7 +5,6 @@ import {Login} from "./login";
 import {Balance} from "./balance";
 import useStyles from "./styles";
 
-
 export const Header: FC = () => {
   const classes = useStyles();
   return (

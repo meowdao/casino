@@ -4,7 +4,6 @@ import {Typography} from "@material-ui/core";
 import {BalanceContext} from "../../../components/balance-provider";
 import useStyles from "./styles";
 
-
 export const Balance: FC = () => {
   const classes = useStyles();
   const wallet = useContext(BalanceContext);
