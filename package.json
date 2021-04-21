@@ -7,7 +7,7 @@
     "url": "https://github.com/TrejGun/casino/issues"
   },
   "dependencies": {
-    "@babel/runtime": "7.13.16",
+    "@babel/runtime": "7.13.17",
     "@material-ui/core": "4.11.3",
     "@material-ui/icons": "4.11.2",
     "@material-ui/styles": "4.11.3",
