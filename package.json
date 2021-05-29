@@ -13,7 +13,7 @@
     "@material-ui/styles": "4.11.4",
     "clsx": "1.1.1",
     "copy-webpack-plugin": "9.0.0",
-    "date-fns": "2.21.3",
+    "date-fns": "2.22.1",
     "dotenv": "10.0.0",
     "dotenv-webpack": "7.0.2",
     "express": "4.17.1",
@@ -23,7 +23,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hot-loader": "4.13.0",
-    "webpack": "5.37.1",
+    "webpack": "5.38.1",
     "webpack-dev-middleware": "4.3.0",
     "webpack-hot-middleware": "git+https://github.com/lukeapage/webpack-hot-middleware#2cdfe0d0111dab6432b8683112fd2d17a5e80572"
   },
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/core": "7.14.3",
     "@babel/plugin-transform-runtime": "7.14.3",
-    "@babel/preset-env": "7.14.2",
+    "@babel/preset-env": "7.14.4",
     "@babel/preset-react": "7.13.13",
     "@babel/preset-typescript": "7.13.0",
     "@hot-loader/react-dom": "17.0.1",
