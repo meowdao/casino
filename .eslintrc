@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@trejgun/eslint-config/presets/ts"
+    "@trejgun/eslint-config/presets/tsx"
   ],
   "parserOptions": {
     "project": "./tsconfig.test.json"
