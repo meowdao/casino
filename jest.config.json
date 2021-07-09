@@ -5,6 +5,7 @@
   "rootDir": "client",
   "testEnvironment": "jsdom",
   "testRegex": ".test.tsx?$",
+  "timers": "modern",
   "transform": {
     "^.+\\.tsx?$": "ts-jest"
   },
