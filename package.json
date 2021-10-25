@@ -1,7 +1,8 @@
 {
   "author": {
     "email": "TrejGun+OpenSource@gmail.com",
-    "name": "TrejGun"
+    "name": "TrejGun",
+    "url": "https://trejgun.github.io/"
   },
   "bugs": {
     "url": "https://github.com/TrejGun/casino/issues"
@@ -71,7 +72,7 @@
     "webpack-dev-server": "4.3.1"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=12.13"
   },
   "license": "UNLICENSED",
   "main": "./dist/main.js",
