@@ -52,7 +52,7 @@
     "fork-ts-checker-webpack-plugin": "6.4.0",
     "husky": "4.3.8",
     "jest": "27.3.1",
-    "lint-staged": "11.2.4",
+    "lint-staged": "11.2.3",
     "mini-css-extract-plugin": "2.4.3",
     "path-browserify": "1.0.1",
     "prettier": "2.4.1",
