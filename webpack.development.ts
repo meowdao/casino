@@ -49,6 +49,9 @@ const config: Configuration = {
           {
             loader: "ts-loader",
             options: {
+              compilerOptions: {
+                module: "esnext",
+              },
               getCustomTransformers: () => ({
                 before: [ReactRefreshTypeScript()],
               }),

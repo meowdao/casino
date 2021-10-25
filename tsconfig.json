@@ -7,7 +7,7 @@
     "experimentalDecorators": true,
     "jsx": "react-jsx",
     "lib": ["ES2020.Promise", "dom"],
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -25,10 +25,5 @@
     "strictPropertyInitialization": false,
     "target": "es2017"
   },
-  "exclude": ["node_modules", "./dist"],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
+  "exclude": ["node_modules", "./dist"]
 }
