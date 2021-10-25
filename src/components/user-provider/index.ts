@@ -1,2 +1,3 @@
-export {IUser, IUserContext, UserContext} from "./context";
+export type {IUser, IUserContext} from "./context";
+export {UserContext} from "./context";
 export {UserProvider} from "./provider";
