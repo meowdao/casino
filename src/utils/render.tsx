@@ -1,15 +1,15 @@
 import {ComponentClass, FunctionComponent} from "react";
 import {render} from "react-dom";
-import {createTheme, CssBaseline, MuiThemeProvider} from "@material-ui/core";
+import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 
 const theme = createTheme();
 
 export default (App: ComponentClass<any> | FunctionComponent<any>): void => {
   render(
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <App />
-    </MuiThemeProvider>,
+    </ThemeProvider>,
     document.getElementById("app"),
   );
 };

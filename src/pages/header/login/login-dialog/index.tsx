@@ -1,5 +1,5 @@
 import {ChangeEvent, FC, useState} from "react";
-import {Button, Dialog, DialogActions, DialogContent, TextField} from "@material-ui/core";
+import {Button, Dialog, DialogActions, DialogContent, TextField} from "@mui/material";
 
 import {IUser} from "../../../../components/user-provider";
 

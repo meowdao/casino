@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {AppBar, Hidden, Link, Toolbar} from "@material-ui/core";
+import {AppBar, Hidden, Link, Toolbar} from "@mui/material";
 
 import {Login} from "./login";
 import {Balance} from "./balance";

@@ -1,5 +1,5 @@
 import {FC, useContext, useState} from "react";
-import {Button, Dialog, DialogActions, DialogContent, Grid, DialogProps} from "@material-ui/core";
+import {Button, Dialog, DialogActions, DialogContent, Grid, DialogProps} from "@mui/material";
 
 import {BalanceContext} from "../../../components/balance-provider";
 import {Panel} from "./panel";

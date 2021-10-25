@@ -1,14 +1,5 @@
 import {forwardRef, useImperativeHandle, useState} from "react";
-import {
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableSortLabel,
-  TableRow,
-} from "@material-ui/core";
+import {Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableSortLabel, TableRow} from "@mui/material";
 
 export interface IResultsSelectorProps {}
 

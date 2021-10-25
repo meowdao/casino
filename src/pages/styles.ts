@@ -1,6 +1,7 @@
-import {makeStyles} from "@material-ui/core";
+import {Theme} from "@mui/material/styles";
+import {makeStyles} from "@mui/styles";
 
-export default makeStyles(
+export default makeStyles<Theme>(
   theme => ({
     root: {
       overflowY: "auto",
@@ -10,10 +11,16 @@ export default makeStyles(
       position: "relative",
       flexDirection: "column",
     },
-    container: theme.mixins.gutters({
+    container: {
       paddingTop: theme.spacing(11),
       paddingBottom: theme.spacing(11),
-    }),
+      paddingLeft: theme.spacing(2),
+      paddingRight: theme.spacing(2),
+      [theme.breakpoints.up("sm")]: {
+        paddingLeft: theme.spacing(3),
+        paddingRight: theme.spacing(3),
+      },
+    },
   }),
   {name: "Layout"},
 );

@@ -1,5 +1,5 @@
 import {FC, useContext} from "react";
-import {Typography} from "@material-ui/core";
+import {Typography} from "@mui/material";
 
 import {BalanceContext} from "../../../components/balance-provider";
 import useStyles from "./styles";

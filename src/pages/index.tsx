@@ -1,5 +1,5 @@
 import {FC, useCallback, useRef} from "react";
-import {Container} from "@material-ui/core";
+import {Container} from "@mui/material";
 
 import {UserProvider} from "../components/user-provider";
 import {BalanceProvider} from "../components/balance-provider";

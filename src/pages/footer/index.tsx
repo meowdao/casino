@@ -1,6 +1,6 @@
 import {FC, Fragment, useState} from "react";
-import {AppBar, Fab, Link, Toolbar} from "@material-ui/core";
-import {Casino} from "@material-ui/icons";
+import {AppBar, Fab, Link, Toolbar} from "@mui/material";
+import {Casino} from "@mui/icons-material";
 
 import {GameDialog} from "./game-dialog";
 import useStyles from "./styles";

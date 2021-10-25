@@ -1,6 +1,6 @@
 import {FC, Fragment, MouseEvent, useContext, useState} from "react";
-import {Button, IconButton, Menu, MenuItem, Tooltip} from "@material-ui/core";
-import {AccountCircle} from "@material-ui/icons";
+import {Button, IconButton, Menu, MenuItem, Tooltip} from "@mui/material";
+import {AccountCircle} from "@mui/icons-material";
 
 import {IUser, UserContext} from "../../../components/user-provider";
 import {LoginDialog} from "./login-dialog";
