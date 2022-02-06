@@ -1,13 +1,9 @@
 {
-  "collectCoverageFrom": ["src/**/*.{js,jsx,ts,tsx}"],
   "coverageDirectory": "../coverage",
   "moduleFileExtensions": ["js", "jsx", "ts", "tsx", "json"],
-  "rootDir": "client",
+  "rootDir": "src",
   "testEnvironment": "jsdom",
-  "testRegex": ".test.tsx?$",
-  "timers": "modern",
-  "transform": {
-    "^.+\\.tsx?$": "ts-jest"
-  },
+  "testMatch": ["**/*.test.tsx"],
+  "preset": "ts-jest",
   "verbose": true
 }
