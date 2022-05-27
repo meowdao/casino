@@ -31,7 +31,7 @@
     "@types/mini-css-extract-plugin": "2.5.0",
     "@types/node": "16.11.36",
     "@types/progress-bar-webpack-plugin": "2.1.2",
-    "@types/react": "17.0.45",
+    "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
     "@types/webpack-dev-server": "4.7.1",
     "@typescript-eslint/eslint-plugin": "5.26.0",
