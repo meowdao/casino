@@ -12,7 +12,7 @@ const config: Configuration = {
   mode: "development",
   devtool: "cheap-module-source-map",
   entry: {
-    main: ["webpack/hot/dev-server", "webpack-dev-server/client", "./src"],
+    main: ["./src"],
   },
   output: {
     path: path.join(__dirname, "dist"),
@@ -49,9 +49,6 @@ const config: Configuration = {
           {
             loader: "ts-loader",
             options: {
-              compilerOptions: {
-                module: "esnext",
-              },
               getCustomTransformers: () => ({
                 before: [ReactRefreshTypeScript()],
               }),
@@ -93,6 +90,9 @@ const config: Configuration = {
   },
   watchOptions: {
     aggregateTimeout: 0,
+  },
+  stats: {
+    errorDetails: true,
   },
   devServer: {
     static: {
