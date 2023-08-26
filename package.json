@@ -23,7 +23,7 @@
     "@gemunion/cross-env": "0.0.4",
     "@gemunion/eslint-config": "4.0.5",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.11",
-    "@testing-library/jest-dom": "5.17.0",
+    "@testing-library/jest-dom": "6.1.2",
     "@testing-library/react": "14.0.0",
     "@types/copy-webpack-plugin": "8.0.1",
     "@types/dotenv-webpack": "7.0.4",
