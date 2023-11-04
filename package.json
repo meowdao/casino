@@ -29,7 +29,7 @@
     "@types/dotenv-webpack": "7.0.6",
     "@types/jest": "29.5.7",
     "@types/mini-css-extract-plugin": "2.5.0",
-    "@types/node": "18.18.8",
+    "@types/node": "20.8.10",
     "@types/progress-bar-webpack-plugin": "2.1.4",
     "@types/react": "18.2.34",
     "@types/react-dom": "18.2.14",
