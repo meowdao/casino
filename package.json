@@ -21,7 +21,7 @@
   "description": "app",
   "devDependencies": {
     "@gemunion/cross-env": "0.0.4",
-    "@gemunion/eslint-config": "4.0.5",
+    "@gemunion/eslint-config": "4.0.6",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.11",
     "@testing-library/jest-dom": "6.2.0",
     "@testing-library/react": "14.1.2",
